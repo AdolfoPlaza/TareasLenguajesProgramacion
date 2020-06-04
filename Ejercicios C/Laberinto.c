@@ -4,6 +4,10 @@
 #include<windows.h>
 #include <conio.h>
 
+//Participantes:
+//Alex Sarabia
+//Adolfo Plaza
+
 void gotoxy(int x,int y){
 HANDLE hCon;
 COORD dwPos;
@@ -22,7 +26,7 @@ void main(){
     int j;
    
     srand(time(NULL));
-    //creación de matriz y generación de numeros aleatorios
+    //creaciÃ³n de matriz y generaciÃ³n de numeros aleatorios
     for(i=0; i< largo;i++){	
         for(j=0; j< largo;j++){	 
             matriz[i][j] = rand()%2; 	
@@ -52,7 +56,7 @@ do{
 	}
 	
 	
-	printf("\nEscapa de la prision\n1 = Alambrada.\n0 = Nada.\n9 = Salida.\n5 = Tú.\n\nPuntos de Vida: %d\n", vida);
+	printf("\nEscapa de la prision\n1 = Alambrada.\n0 = Nada.\n9 = Salida.\n5 = TÃº.\n\nPuntos de Vida: %d\n", vida);
 	printf("Posicion: %d\t [%d][%d]\n", matriz[y][x] , y , x);
 	
 
